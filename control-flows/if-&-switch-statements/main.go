@@ -75,7 +75,17 @@ func main()  {
 						fmt.Println("It is are even numbers")
 		default:
 						fmt.Println("It is not 1 nor 2")
-			
+		}
+
+		// Tagless switch case statements operations
+		i := 5
+		switch {
+		case i > 1:
+			fmt.Println("positive")
+		case i < 1:
+			fmt.Println("negative")
+		default:
+			fmt.Println("is one")
 		}
 
 }
