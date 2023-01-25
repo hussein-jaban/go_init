@@ -67,11 +67,12 @@ func main()  {
 		}
 
 		// switch case statements
-		switch 2 {
+		switch 8 {
 		case 1:
 						fmt.Println("It is 1")
-		case 2:
-						fmt.Println("It is 2")
+		// extending case test statements
+		case 2, 4, 8:
+						fmt.Println("It is are even numbers")
 		default:
 						fmt.Println("It is not 1 nor 2")
 			
