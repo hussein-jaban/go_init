@@ -12,6 +12,8 @@ var (
 		gender string = "M"
 )
 
+// 
+
 func main()  {
 
 	// Declaring a variable without assigning
