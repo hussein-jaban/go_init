@@ -17,7 +17,13 @@
   - no private scope
 
 - ### Naming conventions
+
   - Pascal or camelCase
     - Capitalize acronyms (HTTP, URL
   - As short as reasonable
     - longer names for longer lives
+
+- ### Type conversions
+
+  - destination Type(variable)
+  - use strconv package for strings
