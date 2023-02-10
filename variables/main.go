@@ -12,7 +12,8 @@ var (
 		gender string = "M"
 )
 
-// 
+// Variables that are Start with a capital letter a exported by go to be used at the package level
+var Sentence string = "John is a dude"
 
 func main()  {
 
