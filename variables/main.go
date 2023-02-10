@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 // Declaring variables outside scope of main function
 // You can't use the shorthand notation
@@ -28,8 +31,15 @@ func main()  {
 
 	// Declaring a variable using the shorthand notation
 	z := 45
-	fmt.Printf("x: %v, %T ", x, x)
-	fmt.Printf("y: %v ", y)
-	fmt.Printf("z: %v ", z)
-	fmt.Printf("Name: %v ", name)
+	fmt.Printf("x: %v, %T\n ", x, x)
+	fmt.Printf("y: %v\n ", y)
+	fmt.Printf("z: %v\n ", z)
+	fmt.Printf("Name: %v\n ", name)
+
+	// Converting int to string
+	var i int = 42
+	fmt.Printf("%v, %T\n", i, i)
+	var j string
+	j = strconv.Itoa(i)
+	fmt.Printf("%v, %T\n", j, j)
 }
