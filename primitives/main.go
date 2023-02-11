@@ -64,4 +64,15 @@ func main()  {
 		fmt.Println(ab * bb)  // 37.74
 		fmt.Println(ab / bb)  // 2.7567567567567566
 
+
+	// Strings
+		s := "this is a string"
+		fmt. Printf("%v, %T\n", s, s) // this is a string, string
+
+		// string concatination
+		s2 := "This also is string two"
+		fmt.Println(s + s2) // this is a stringThis also is string two
+		by := []byte(s)
+		fmt. Printf("%v, %T\n", by, by) // [116 104 105 115 32 105 115 32 97 32 115 116 114 105 110 103], []uint8
+
 }
