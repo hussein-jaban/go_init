@@ -51,7 +51,7 @@ func main()  {
 		fmt.Println(f >> 3) // 2^3 / 2^3 = 2^0 = 1
 
 
-		// Floats ie float8, float32, float64
+		// Floats ie float32, float64
 		var n float64 = 3.14
 		n = 13.7e72
 		n = 2.1E14
