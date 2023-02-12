@@ -6,5 +6,6 @@ import (
 
 
 func main()  {
-fmt.Print("Costants")
-}
+	const myConst int = 23
+	fmt.Printf("%v, %T\n", myConst, myConst) // 23, int
+} 
