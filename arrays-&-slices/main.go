@@ -35,4 +35,12 @@ func main()  {
 	fmt.Println(c) // [4 5 6 7 8 9 10]
 	fmt.Println(d) // [1 2 3 4 5 6]
 	fmt.Println(e) // [4 5 6]
+
+	// Using the make function to create slices. 
+	// NB: Slice always has underlying array, thats why they can have the same length but different capacity.
+
+	h := make([]int, 3, 100)
+	fmt.Printf("h: %v\n", h) // h: [0 0 0]
+	fmt.Printf("Length: %v\n", len(h)) // Length: 3
+	fmt.Printf("Capacity: %v\n", cap(h)) // Capacity: 100
 } 
