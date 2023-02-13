@@ -43,4 +43,17 @@ func main()  {
 	fmt.Printf("h: %v\n", h) // h: [0 0 0]
 	fmt.Printf("Length: %v\n", len(h)) // Length: 3
 	fmt.Printf("Capacity: %v\n", cap(h)) // Capacity: 100
+
+	// splice concatination
+	x := []int{1,2,3}
+	x = append(x, []int{4,5,6}...) 
+	fmt.Printf("x: %v\n", x) // x: [1 2 3 4 5 6]
+
+	// removing element at the start
+	y := x[1:]
+	fmt.Printf("y: %v\n", y) // y: [2 3 4 5 6]
+	
+	// removing element at the end
+	j := x[ : len(x) - 1]
+	fmt.Printf("j: %v\n", j) // j: [1 2 3 4 5]
 } 
