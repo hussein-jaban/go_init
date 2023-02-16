@@ -30,5 +30,20 @@ func main()  {
 	make_map["d"] = 4
 	fmt.Println(make_map) // map[a:1 b:2 c:3 d:4]
 
+	// Deleting
+	delete(make_map, "b")
+	fmt.Println(make_map) // map[a:1 c:3 d:4]
+
+
+	// Using coma okay syntax to check if a key exists and returns true if it does or false if it doesn't
+
+	a, ok := make_map["a"]
+	fmt.Println(a, ok) // 1 false
+
+	z, ok := make_map["z"]
+	fmt.Println(z, ok) // 0 false
+
+
+
 
 }
