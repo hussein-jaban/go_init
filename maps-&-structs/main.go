@@ -2,6 +2,13 @@ package main
 
 import "fmt"
 
+// Structs
+type Doctor struct {
+			number int
+			actorName string
+			companions []string
+}
+
 func main()  {
 	// Creating Map
 	statePopulation := map[string]int{
@@ -38,11 +45,25 @@ func main()  {
 	// Using coma okay syntax to check if a key exists and returns true if it does or false if it doesn't
 
 	a, ok := make_map["a"]
-	fmt.Println(a, ok) // 1 false
+	fmt.Println(a, ok) // 1 true
 
 	z, ok := make_map["z"]
 	fmt.Println(z, ok) // 0 false
 
+	// impelenting structs
+	aDoctor := Doctor {
+			number: 3,
+			actorName: "Jon Pertwee",
+			companions: [] string {
+					"Jo Liz Sarah", "Grant Shaw",  "Jane Smith",
+			},
+	}
+ fmt.Println(aDoctor) // {3 Jon Pertwee [Jo Liz Sarah Grant Shaw Jane Smith]}
+
+	// Inspecting structs with the dot notation
+ fmt.Println(aDoctor.number) // 3
+ fmt.Println(aDoctor.actorName) // Jon Pertwee
+ fmt.Println(aDoctor.companions) // [Jo Liz Sarah Grant Shaw Jane Smith]
 
 
 
