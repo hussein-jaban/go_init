@@ -65,6 +65,9 @@ func main()  {
  fmt.Println(aDoctor.actorName) // Jon Pertwee
  fmt.Println(aDoctor.companions) // [Jo Liz Sarah Grant Shaw Jane Smith]
 
+	// Declaring structs anonymosly ie with out the type keyword
 
+	user := struct{name string; age int} {name: "hussein", age: 22}
+	fmt.Println(user) // {hussein 22}
 
 }
