@@ -24,4 +24,11 @@ func main()  {
 	fmt.Println(statePopulation["ohio"]) // 345656
 	fmt.Println(make_map["c"]) // 3
 
+	// Adding key value pairs to an existing map
+			// The oeder of a map is not guaranteed unlike arrays and slices.
+	fmt.Println(make_map) // map[a:1 b:2 c:3]
+	make_map["d"] = 4
+	fmt.Println(make_map) // map[a:1 b:2 c:3 d:4]
+
+
 }
