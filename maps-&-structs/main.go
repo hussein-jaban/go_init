@@ -15,8 +15,13 @@ func main()  {
 	make_map := make(map[string]int)
 	make_map = map[string]int{
 			"a": 1,
-		"b": 2,
-		"c": 3,
+			"b": 2,
+			"c": 3,
 	}
 	fmt.Println(make_map) // map[a:1 b:2 c:3]
+
+	// Accessing values from a map
+	fmt.Println(statePopulation["ohio"]) // 345656
+	fmt.Println(make_map["c"]) // 3
+
 }
