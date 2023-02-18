@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 // Structs
 type Doctor struct {
@@ -9,7 +12,8 @@ type Doctor struct {
 			companions []string
 }
 type Animal struct {
-	name string
+	// using tags for validations
+	name string `required max:"100"`
 	origin string
 }
 // embeded structs like inheritance in OOP
@@ -97,5 +101,9 @@ func main()  {
 
 	fmt.Println(bird1) // {{Ostrich Africa} 45 false}
 
+	// Validation with tags in structs
+	t := reflect.TypeOf(Animal{})
+	field, _ := t.FieldByName("name")
+	fmt.Println(field.Tag) // required max:"100"
 
 }
