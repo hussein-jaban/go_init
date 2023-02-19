@@ -80,6 +80,15 @@ func main()  {
 	user := struct{name string; age int} {name: "hussein", age: 22}
 	fmt.Println(user) // {hussein 22}
 
+	// Embedded structs
+	bird0 := Bird{
+		Animal: Animal{name: "chicken", origin: "usa"},
+		speedKPH: 20,
+		canFly: false,
+	}
+	fmt.Println(bird0) // {{chicken usa} 20 false}
+
+
 	bird1 := Bird{}
 	bird1.name = "Ostrich"
 	bird1.origin =  "Africa"
