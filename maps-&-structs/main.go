@@ -9,6 +9,16 @@ type Doctor struct {
 			companions []string
 }
 
+type Animal struct {
+		name string
+		origin string
+}
+type Bird struct {
+		Animal
+		speedKPH int
+		canFly bool
+}
+
 func main()  {
 	// Creating Map
 	statePopulation := map[string]int{
@@ -69,5 +79,14 @@ func main()  {
 
 	user := struct{name string; age int} {name: "hussein", age: 22}
 	fmt.Println(user) // {hussein 22}
+
+	bird1 := Bird{}
+	bird1.name = "Ostrich"
+	bird1.origin =  "Africa"
+	bird1.speedKPH=  45
+	bird1.canFly=  false
+
+	fmt.Println(bird1) // {{Ostrich Africa} 45 false}
+
 
 }
