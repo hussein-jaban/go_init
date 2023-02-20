@@ -8,11 +8,11 @@ type Doctor struct {
 			actorName string
 			companions []string
 }
-
 type Animal struct {
-		name string
-		origin string
+	name string
+	origin string
 }
+// embeded structs like inheritance in OOP
 type Bird struct {
 		Animal
 		speedKPH int
