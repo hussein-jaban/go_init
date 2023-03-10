@@ -58,13 +58,23 @@ func main()  {
 		}
 
 		// Checking multiple conditions using esle if 
-
 		if false {
 			fmt.Println("1st if condition")
 		} else if true {
 			fmt.Println("2nd if condition")
 		} else {
 			fmt.Println("3rd if condition")
+		}
+
+		// switch case statements
+		switch 2 {
+		case 1:
+						fmt.Println("It is 1")
+		case 2:
+						fmt.Println("It is 2")
+		default:
+						fmt.Println("It is not 1 nor 2")
+			
 		}
 
 }
