@@ -26,7 +26,29 @@ func main()  {
 				"Illinois": 12801539,
 				"Ohio": 11614373,
 				}
+		// Providing true condition
 		if pop, ok := statePopulations["Florida"]; ok {
-					fmt.Println (pop)
+					fmt.Println(pop)
 		}
+		// Providing false condition
+		if pop, ok := statePopulations["bhbgrkjnfghirw"]; ok {
+					fmt.Println(pop)
+		}
+
+		// using if with comparising and logical operator
+		number := 50
+		guess := 200
+		if guess > number {
+				fmt.Println("It is too hign")
+		}
+		if guess < number {
+				fmt.Println("It is too low")
+		}
+		if guess == number {
+				fmt.Println("Correct")
+		}
+		if guess < 1 || guess > 100 {
+				fmt.Println("Your guess must be between 1 and 100")
+		}
+
 }
