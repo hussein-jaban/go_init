@@ -57,6 +57,16 @@ func main()  {
 				fmt.Println("Your guess must be between 1 and 100")
 		}
 
+		// Checking multiple conditions using esle if 
+
+		if false {
+			fmt.Println("1st if condition")
+		} else if true {
+			fmt.Println("2nd if condition")
+		} else {
+			fmt.Println("3rd if condition")
+		}
+
 }
 
 func returnTrue() bool {
