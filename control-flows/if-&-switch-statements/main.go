@@ -51,4 +51,15 @@ func main()  {
 				fmt.Println("Your guess must be between 1 and 100")
 		}
 
+		// The concept of short-circuiting
+		guess = -5
+		if guess < 1 || returnTrue() || guess > 100 {
+				fmt.Println("Your guess must be between 1 and 100")
+		}
+
+}
+
+func returnTrue() bool {
+	fmt.Println("this function returns true")
+	return true
 }
